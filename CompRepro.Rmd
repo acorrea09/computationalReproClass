@@ -13,14 +13,24 @@ knitr::opts_chunk$set(echo = TRUE)
 
 1) Please explain 1 of Wilson et. al's suggestions for good practices in computational reproducibility:
 
+In science, it is common to work on collaborative projects, thus one of Wilson et al's suggestions is to make it easy for new members joining the team to understand, find, and know how, where and what to contribute to the project. Some of the tips that are given include:
 
+a) Creating an overview of your project's goal/s in a README.txt file. This should contain a brief description and name of the project, contact information and some example of how to run some part of the code or tasks. One should also create a second file. "CONTRIBUTING", with detailed information of how to run the code and what tools/versions/plugins should be correctly installed to do so. 
 
+b) A third file should be a "To-do" list or use the GitHub "new issue" option to label each new task. Each item should be explicit and also include a note of how members will communicate with each other to inform correctly about progress, issues, etc. Either privately or publicly. Meeting notes, Slack, email list servers among others are valid channel options.
 
+c) A fourth file should be named "LICENSE" with a home directory stating the license/s of the software, data, and manuscripts used. They also recommended two kinds of  "Creative Commons licenses" for data and text the CC-0 (the "No Rights Reserved" license) and the CC-BY (the "Attribution" license). And few for software such MIT, BSD, or Apache license. In the scenario that there wasn't a license it'd suggest that the author is not publicly sharing the material for others to use or modify it, which prevents collaboration.
+
+d) Finally, a fifth file, "CITATION", should contain the correct citation of the project and where to find all the data, code, figures with its own DOIs.
+
+In summary, there should be a total of five .txt files: 1) project's goal and name, 2) directions of how to run the code, 3) 'To-do list", 4) license information and 5) how to cite the project and material used. Following these suggestions will make collaboration much more easy, will also help yourself in the future if you haven't work on this project for a while and overall, will improve the quality of your research making it more manageable, transparent and reproducible.
 
 2) Please find the square root of 4 to the 13th power, writing your code in the gray box below so that it executes and provides the answer. Hit the play button to make sure it works:
 
 ```{r}
-
+math = sqrt(4)^13
+print(math)
 ```
 
 3) Save your file and add it to your GitHub repository at: https://classroom.github.com/a/WO52_vGE
+
